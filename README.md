@@ -25,6 +25,7 @@ Here is the visualization of the result (via Tableau):
 
 **Datasets**
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
+- [x] Twitter Gun related Datset from historical Twitter data (DiscoveryText/Sifter)
 
 ## Notes
 - The Twitter dataset by Ibrahim Naji that I used is removed as it is too big to upload to GitHub. However, there is a pickled dataset with the tweets I used
