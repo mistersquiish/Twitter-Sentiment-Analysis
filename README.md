@@ -17,11 +17,11 @@ Here is the visualization of the result (via Tableau):
 
 
 ## Libraries / Datasets Used
-*Libraries*
+**Libraries**
 - [x] Natural Language Toolkit (NLTK)
 - [x] Twitter API (Tweepy)
 - [x] Machine Learning (scikit-learn)
-*Datasets*
+**Datasets**
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 
 ## Notes
