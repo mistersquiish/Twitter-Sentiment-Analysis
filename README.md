@@ -25,7 +25,7 @@ Here is the visualization of the result (via Tableau):
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 
 ## Notes
-- The Twitter dataset by Ibrahim Naji that I used is removed as it is too big to upload to GitHub. However, their is a pickled dataset with the tweets I used
+- The Twitter dataset by Ibrahim Naji that I used is removed as it is too big to upload to GitHub. However, there is a pickled dataset with the tweets I used
 - classifer accuracy about 77 percent for Twitter datset found online
 - classifer accuracy about 60 percent for gun dataset
 - Linear SVC came out as the most accurate but could not figure out how to extract probability (hence, only MNB and BNB classifier was used)
