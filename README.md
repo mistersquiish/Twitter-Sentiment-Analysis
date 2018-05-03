@@ -44,6 +44,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     d. Collect in about 22,000 tweets
     
     *Screenshot of the Twitter tweets collected*
+    
     <img src='twitter_stream_screenshot.png' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
     
      Notes:
@@ -103,12 +104,10 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 *Datasets*
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 - [x] Gun Ownership Statistics (http://demographicdata.org/facts-and-figures/gun-ownership-statistics/ )
-=======
 
 **Datasets**
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 - [x] Twitter Gun related Datset from historical Twitter data (DiscoveryText/Sifter)
->>>>>>> 76fc67b8977d4f79f778ea2171946d1e82981fe3
 
 ## Notes
 - The Twitter dataset by Ibrahim Naji that I used is removed as it is too big to upload to GitHub. However, there is a pickled dataset with the tweets I used.
