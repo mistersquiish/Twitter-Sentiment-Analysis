@@ -9,23 +9,23 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 
 ## Walkthrough
 
-1. Generate the classifiers based on the Twitter dataset (generate_classifiers.py).
+1) Generate the classifiers based on the Twitter dataset (generate_classifiers.py).
 
-    a. Downloaded Ibrahim Naji's Twitter Sentiment Analysis Training Corpus to train with (Only used 10,000 tweets).
-    b. Read in the Twitter dataset
-    c. Used NLTK's word_tokenize function to tokenize the words in the tweet.
-    d. Get the features set of the Twitter dataset (top 3000 words that appear) and parse each tweet leaving only words that appear in the feature set.
-    e. Train the classifiers using the feature set. Ran NLTK's Naive Bayes algorithm and Scikit-learn's Multinomial NB, Bernoulli NB, Linear SVC, Nu SVC, and Logistic Regression.
-    f. Pickle dataset used and classiers. (Pi)
+    1. Downloaded Ibrahim Naji's Twitter Sentiment Analysis Training Corpus to train with (Only used 10,000 tweets).
+    2. Read in the Twitter dataset
+    3. Used NLTK's word_tokenize function to tokenize the words in the tweet.
+    4. Get the features set of the Twitter dataset (top 3000 words that appear) and parse each tweet leaving only words that appear in the feature set.
+    5. Train the classifiers using the feature set. Ran NLTK's Naive Bayes algorithm and Scikit-learn's Multinomial NB, Bernoulli NB, Linear SVC, Nu SVC, and Logistic Regression.
+    6. Pickle dataset used and classiers. (Pi)
     
     *Screenshot of the Twitter dataset used to train classifiers*
     <img src='twitter_dataset_screenshot.png' title='Screenshot of twitter dataset' width='' alt='Screenshot of dataset' />
 
-2. Test the classifier with the gun dataset (test_gun_dataset.py).
+2) Test the classifier with the gun dataset (test_gun_dataset.py).
 
-    a. Read in the Twitter gun related dataset which we will test the classifiers on (retrieved using DiscoverText and Sifter).
-    b. Create a feature set and then a testing set (same as what we did previously in step 1).
-    c. Run the NLTK.classify.accuracy function.
+    1. Read in the Twitter gun related dataset which we will test the classifiers on (retrieved using DiscoverText and Sifter).
+    2. Create a feature set and then a testing set (same as what we did previously in step 1).
+    3. Run the NLTK.classify.accuracy function.
     
     *Screenshot of the classifiers accuracy*
     <img src='test_classifiers_screenshot.png' title='Screenshot of test classifiers' width='' alt='Screenshot of test classifiers' />
@@ -36,12 +36,12 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     - I tested the classifiers on the dataset I trained them in, and it produced around a 77 percent accuracy. So a noticeable drop.
     - To investigate bias, I tested the training set on exclusively positive and then negative tweets. The result was a noticeable negative bias towards tweets.
     
-3. Stream Twitter data and record the sentiment value using the sentiment_analysis_module.py (twitter_stream.py).
+3) Stream Twitter data and record the sentiment value using the sentiment_analysis_module.py (twitter_stream.py).
 
-    a. Set up a Twitter app and set our access token using Oath to connect to the Twitter API
-    b. Stream tweets related the 'guns' and write them into a csv file.
-    c. Write in location, text, and sentiment polarity. Sentiment polarity is the net of the probability of positive and negative sentiment. (ex. A sentiment polarity of '1' would mean the tweet is 100 percent chance of being positive and 0 percent change of being negative)
-    d. Collect in about 22,000 tweets
+    1. Set up a Twitter app and set our access token using Oath to connect to the Twitter API
+    2. Stream tweets related the 'guns' and write them into a csv file.
+    3. Write in location, text, and sentiment polarity. Sentiment polarity is the net of the probability of positive and negative sentiment. (ex. A sentiment polarity of '1' would mean the tweet is 100 percent chance of being positive and 0 percent change of being negative)
+    4. Collect in about 22,000 tweets
     
     *Screenshot of the Twitter tweets collected*
     
@@ -50,23 +50,23 @@ Technologies used: Python, machine learning, natural language processing, Tablea
      Notes:
      - Some of the tweets do not have a location. This will be addressed in the next step.
     
-4. Parse the Twitter stream data for only tweets with location (parse_twitter_stream.py)
+4) Parse the Twitter stream data for only tweets with location (parse_twitter_stream.py)
 
-    a. Parse the Twitter stream data for tweets with locations. The sentiment analysis is to group tweet sentiment by state.
-    b. Search for key words such as "Texas" or "TX" and write the filtered Twitter stream data into another csv.
+    1. Parse the Twitter stream data for tweets with locations. The sentiment analysis is to group tweet sentiment by state.
+    2. Search for key words such as "Texas" or "TX" and write the filtered Twitter stream data into another csv.
     
     *Screenshot of the parsed Twitter tweets collected*                       
     <img src='twitter_stream_parsed_screenshot.png' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
     
-5. Sort the parsed Twitter data by state (sort_twitter_stream_data.py)
+5) Sort the parsed Twitter data by state (sort_twitter_stream_data.py)
 
-    a. Group the data by state and calculate average sentiment polarity.
-    b. Visualize result on Tableau.
+    1. Group the data by state and calculate average sentiment polarity.
+    2. Visualize result on Tableau.
 
     *Visualization of the result (via Tableau)*
     <img src='tableau_visual_screenshot.png' title='Screenshot of Tableau' width='' alt='Screenshot of Tableau' />
 
-6. Analysis
+6) Analysis
 
     If you look at the midwest and southeast United States, you can see there is a slightly more negative sentiment compared to the other states.
     <img src='tableau_visual_analysis_screenshot.png' title='Screenshot of Tableau analysis' width='' alt='Screenshot of tableau analysis' />
@@ -76,12 +76,10 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     <img src='gun_ownership_screenshot.png' title='Screenshot of gun ownership' width='' alt='Screenshot of gun ownership' />
 
     So the more negative sentiment a person is towards guns, the higher the gun ownership rate. It is an almost opposite type of result I was expecting.
-
-    (Please note that the methods I used most likely generated random errors. I have not been scrutinized on my project and as a result everything should be taken with a grain of salt. )
     
-7. Conclusion
+7) Conclusion
 
-    Overall, I learned a lot during this project. I strengthened my Python scripting skills and exposed myself to powerful libraries like NLTK and Scikit-learn. In addition, I utilized Twitter's API in a unique way to investigate a controversial problem in the United States.
+    Overall, I learned a lot during this project. I strengthened my Python scripting and exposed myself to powerful libraries like NLTK and Scikit-learn. In addition, I utilized Twitter's API in a unique way to investigate a controversial problem in the United States.
     
     Some things in the future to improve this data analysis project:
     - [ ] Train with data is more gun related. Couldn't do this as I did not have the time to label 10,000+ Twitter tweets.
