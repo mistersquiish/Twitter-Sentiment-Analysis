@@ -100,7 +100,6 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 - [x] Twitter API (Tweepy)
 - [x] Machine Learning (scikit-learn)
 - [x] CSV
-**Datasets**
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 - [x] Gun Ownership Statistics (http://demographicdata.org/facts-and-figures/gun-ownership-statistics/ )
 
