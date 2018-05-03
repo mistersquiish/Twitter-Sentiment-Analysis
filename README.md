@@ -12,11 +12,11 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 1) Generate the classifiers based on the Twitter dataset (generate_classifiers.py).
 
     1. Downloaded Ibrahim Naji's Twitter Sentiment Analysis Training Corpus to train with (Only used 10,000 tweets).
-    2. Read in the Twitter dataset
+    2. Read in the Twitter dataset.
     3. Used NLTK's word_tokenize function to tokenize the words in the tweet.
     4. Get the features set of the Twitter dataset (top 3000 words that appear) and parse each tweet leaving only words that appear in the feature set.
     5. Train the classifiers using the feature set. Ran NLTK's Naive Bayes algorithm and Scikit-learn's Multinomial NB, Bernoulli NB, Linear SVC, Nu SVC, and Logistic Regression.
-    6. Pickle dataset used and classiers. (Pi)
+    6. Pickle dataset used, word features, and classifiers.
     
     *Screenshot of the Twitter dataset used to train classifiers*
     <img src='twitter_dataset_screenshot.png' title='Screenshot of twitter dataset' width='' alt='Screenshot of dataset' />
@@ -31,17 +31,17 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     <img src='test_classifiers_screenshot.png' title='Screenshot of test classifiers' width='' alt='Screenshot of test classifiers' />
     
     Notes:
-    - The Twitter gun related dataset was historical data retrieved in February (we retrieved historical data at first because Tweepy for was not letting us stream tweets. However, I will address this in my conclusion)
+    - The Twitter gun related dataset was historical data retrieved in February. I retrieved historical data at first because Tweepy for was not letting us stream tweets. However, I will address this in my conclusion.
     - Accuracy was averaging about 60 percent if we remove the LogisticRegression and NLTK's NB.
     - I tested the classifiers on the dataset I trained them in, and it produced around a 77 percent accuracy. So a noticeable drop.
     - To investigate bias, I tested the training set on exclusively positive and then negative tweets. The result was a noticeable negative bias towards tweets.
     
 3) Stream Twitter data and record the sentiment value using the sentiment_analysis_module.py (twitter_stream.py).
 
-    1. Set up a Twitter app and set our access token using Oath to connect to the Twitter API
+    1. Set up a Twitter app and set our access token using Oath to connect to the Twitter API.
     2. Stream tweets related the 'guns' and write them into a csv file.
-    3. Write in location, text, and sentiment polarity. Sentiment polarity is the net of the probability of positive and negative sentiment. (ex. A sentiment polarity of '1' would mean the tweet is 100 percent chance of being positive and 0 percent change of being negative)
-    4. Collect in about 22,000 tweets
+    3. Write in location, text, and sentiment polarity. Sentiment polarity is the net of the probability of positive and negative sentiment. (ex. A sentiment polarity of '1' would mean the tweet is 100 percent chance of being positive and 0 percent change of being negative).
+    4. Collect in about 22,000 tweets.
     
     *Screenshot of the Twitter tweets collected*
     
@@ -83,11 +83,13 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     
     Some things in the future to improve this data analysis project:
     - [ ] Train with data is more gun related. Couldn't do this as I did not have the time to label 10,000+ Twitter tweets.
+    - [ ] Stream more tweets.
     - [ ] Addressing a note I made in step 2, used Twitter stream data to test accuracy.
     - [ ] Explore different machine learning algorithms.
     - [ ] Train with a larger dataset. Training with 10,000 Tweets already gave my Mac Air a hard time, so I would like a more computationally powerful computer.
     - [ ] I only used the BNB and MNB classifiers to classify tweets as I could not figure out how to extract probability from the Linear SVC and Nu SVC classifiers.
-    - [ ] Twitter data is dirty. Perhaps a different approach?
+    - [ ] I used the keyword 'guns' when streaming the Twitter tweets, however, this does not necessarily mean the subject of the tweet will be guns. The phrase 'gun control' can also be included in the tweets, but it is only a small percentage of the overall gun related tweets.
+    - [ ] Twitter text is dirty and short. Perhaps a different approach?
     
     Again, this was my first data analysis project, and I am still learning. If you have any suggestions or possible errors I made, I urge you to message me, so I can investigate further.
 
@@ -97,9 +99,8 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 - [x] Natural Language Toolkit (NLTK)
 - [x] Twitter API (Tweepy)
 - [x] Machine Learning (scikit-learn)
-<<<<<<< HEAD
 - [x] CSV
-*Datasets*
+**Datasets**
 - [x] Twitter Sentiment Analysis Training Corpus by Ibrahim Naji (http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
 - [x] Gun Ownership Statistics (http://demographicdata.org/facts-and-figures/gun-ownership-statistics/ )
 
