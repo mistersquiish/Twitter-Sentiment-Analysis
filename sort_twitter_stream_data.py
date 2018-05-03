@@ -8,10 +8,10 @@
 import csv
 
 statesAbr = ['al', 'ak', 'az', 'ar', 'ca', 'co', 'ct', 'de', 'fl', 'ga',
-          'hi', 'id', 'il', 'in', 'ia', 'ks', 'ky', 'la', 'me', 'md', 'ma',
-          'mi', 'mn', 'ms', 'mo', 'mt', 'ne', 'nv', 'nh', 'nj', 'nm', 'ny',
-          'nc', 'nd', 'oh', 'ok', 'or', 'pa', 'ri', 'sc', 'sd', 'tn', 'tx',
-          'ut', 'vt', 'va', 'wa', 'wv', 'wi', 'wy']
+             'hi', 'id', 'il', 'in', 'ia', 'ks', 'ky', 'la', 'me', 'md', 'ma',
+             'mi', 'mn', 'ms', 'mo', 'mt', 'ne', 'nv', 'nh', 'nj', 'nm', 'ny',
+             'nc', 'nd', 'oh', 'ok', 'or', 'pa', 'ri', 'sc', 'sd', 'tn', 'tx',
+             'ut', 'vt', 'va', 'wa', 'wv', 'wi', 'wy']
 
 # [polarity, count]
 al_count = [0.00, 0]
@@ -65,11 +65,11 @@ wv_count = [0.00, 0]
 wi_count = [0.00, 0]
 wy_count = [0.00, 0]
 
-states_count = [al_count, ak_count, az_count, ar_count, ca_count, co_count, ct_count, de_count, fl_count, ga_count, hi_count, id_count,
-                il_count, in_count, ia_count, ks_count, ky_count, la_count, me_count, md_count, ma_count, mi_count, mn_count,
-                ms_count, mo_count, mt_count, ne_count, nv_count, nh_count, nj_count, nm_count, ny_count, nc_count, nd_count,
-                oh_count, ok_count, or_count, pa_count, ri_count, sc_count, sd_count, tn_count, tx_count, ut_count, vt_count,
-                va_count, wa_count, wv_count, wi_count, wy_count]
+states_count = [al_count, ak_count, az_count, ar_count, ca_count, co_count, ct_count, de_count, fl_count, ga_count,
+                hi_count, id_count, il_count, in_count, ia_count, ks_count, ky_count, la_count, me_count, md_count,
+                ma_count, mi_count, mn_count, ms_count, mo_count, mt_count, ne_count, nv_count, nh_count, nj_count,
+                nm_count, ny_count, nc_count, nd_count, oh_count, ok_count, or_count, pa_count, ri_count, sc_count,
+                sd_count, tn_count, tx_count, ut_count, vt_count, va_count, wa_count, wv_count, wi_count, wy_count]
 
 with open('twitter_stream_data_state_polarity.csv', 'w', newline='') as csvfile:
     field_names = ['State', 'Sentiment Polarity', 'Number of Tweets']

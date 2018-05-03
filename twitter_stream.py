@@ -20,6 +20,7 @@ accessTokenSecret = "TS1y9mTEWd3ckdg9UAKm1mpuf9vsxc9umEpzXzuaPgqcW"
 auth = OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
 
+
 # class streams tweets and writes the text, location, and sentiment value of the text to a csv file
 class listener(StreamListener):
     sentimment_index = 0
@@ -47,6 +48,7 @@ class listener(StreamListener):
     def on_error(self, status):
         print(status)
 
+
 searchTerm = "gun"
 
 twitterStream = Stream(auth, listener())
@@ -55,4 +57,5 @@ with open('datasets/twitter_stream_data.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(field_names)
     twitterStream.filter(track=[searchTerm])
+
 

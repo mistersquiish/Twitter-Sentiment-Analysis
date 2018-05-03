@@ -38,15 +38,17 @@ allwords = nltk.FreqDist(allwords)
 # get the top 5000 words
 word_features = list(allwords.keys())[:5000]
 
+
 # function takes only the words in the document that is in word_features
 def find_features(document):
 
     words = set(document)
     features = {}
-    for w in word_features:
-        features[w] = (w in words)
+    for word in word_features:
+        features[word] = (word in words)
 
     return features
+
 
 # create our list of tuples, labeled either 'pos' or 'neg' with the text in the tweet
 featuresets = [(find_features(text), category) for (text, category) in gun_dataset]
@@ -56,9 +58,9 @@ random.shuffle(featuresets)
 # training_set = featuresets[:15000]
 testing_set = featuresets[:5000]
 
-# print("Original Naive Bayes Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.NB_classifier, testing_set)))
+print("Original Naive Bayes Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.NB_classifier, testing_set)))
 print("MultinomialNB Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.MNB_classifier, testing_set)))
 print("BernoulliNB Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.BNB_classifier, testing_set)))
-# print("LinearSVC Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.LinearSVC_classifier, testing_set)))
-# print("NuSVC Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.NuSVC_classifier, testing_set)))
-# print("LogisticRegression Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.LogisticRegression_classifier, testing_set)))
+print("LinearSVC Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.LinearSVC_classifier, testing_set)))
+print("NuSVC Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.NuSVC_classifier, testing_set)))
+print("LogisticRegression Algo accuracy:", (nltk.classify.accuracy(sentiment_analysis_module.LogisticRegression_classifier, testing_set)))
