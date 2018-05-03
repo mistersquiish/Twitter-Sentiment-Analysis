@@ -55,7 +55,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     a. Parse the Twitter stream data for tweets with locations. The sentiment analysis is to group tweet sentiment by state.
     b. Search for key words such as "Texas" or "TX" and write the filtered Twitter stream data into another csv.
     
-    *Screenshot of the parsed Twitter tweets collected*
+    *Screenshot of the parsed Twitter tweets collected*                       
     <img src='twitter_stream_parsed_screenshot.png' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
     
 5. Sort the parsed Twitter data by state (sort_twitter_stream_data.py)
