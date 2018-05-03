@@ -19,7 +19,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     f. Pickle dataset used and classiers. (Pi)
     
     *Screenshot of the Twitter dataset used to train classifiers*
-    <img src='Screenshots/twitter_dataset_screenshot' title='Screenshot of twitter dataset' width='' alt='Screenshot of dataset' />
+    <img src='screenshots/twitter_dataset_screenshot.png' title='Screenshot of twitter dataset' width='' alt='Screenshot of dataset' />
 
 2. Test the classifier with the gun dataset (test_gun_dataset.py).
 
@@ -28,7 +28,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     c. Run the NLTK.classify.accuracy function.
     
     *Screenshot of the classifiers accuracy*
-    <img src='Screenshots/test_classifiers_screenshot' title='Screenshot of test classifiers' width='' alt='Screenshot of test classifiers' />
+    <img src='screenshots/test_classifiers_screenshot.png' title='Screenshot of test classifiers' width='' alt='Screenshot of test classifiers' />
     
     Notes:
     - The Twitter gun related dataset was historical data retrieved in February (we retrieved historical data at first because Tweepy for was not letting us stream tweets. However, I will address this in my conclusion)
@@ -44,7 +44,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     d. Collect in about 22,000 tweets
     
     *Screenshot of the Twitter tweets collected*
-    <img src='Screenshots/twitter_stream_screenshot' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
+    <img src='screenshots/twitter_stream_screenshot.png' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
     
      Notes:
      - Some of the tweets do not have a location. This will be addressed in the next step.
@@ -55,7 +55,7 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     b. Search for key words such as "Texas" or "TX" and write the filtered Twitter stream data into another csv.
     
     *Screenshot of the parsed Twitter tweets collected*
-    <img src='Screenshots/twitter_stream_parsed_screenshot' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
+    <img src='screenshots/twitter_stream_parsed_screenshot.png' title='Screenshot of Twitter stream' width='' alt='Screenshot of Twitter stream' />
     
 5. Sort the parsed Twitter data by state (sort_twitter_stream_data.py)
 
@@ -63,15 +63,16 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     b. Visualize result on Tableau.
 
     *Visualization of the result (via Tableau)*
-    <img src='Screenshots/tableau_visual_screenshot' title='Screenshot of Tableau' width='' alt='Screenshot of Tableau' />
+    <img src='screenshots/tableau_visual_screenshot.png' title='Screenshot of Tableau' width='' alt='Screenshot of Tableau' />
 
 6. Analysis
 
     If you look at the midwest and southeast United States, you can see there is a slightly more negative sentiment compared to the other states.
-    <img src='Screenshots/tableau_visual_analysis_screenshot' title='Screenshot of Tableau analysis' width='' alt='Screenshot of tableau analysis' />
+    <img src='screenshots/tableau_visual_analysis_screenshot.png' title='Screenshot of Tableau analysis' width='' alt='Screenshot of tableau analysis' />
     
     And if we look at the gun ownership rate per person, there is some correlation.
-    <img src='Screenshots/gun_ownership_screenshot' title='Screenshot of gun ownership' width='' alt='Screenshot of gun ownership' />
+    
+    <img src='screenshots/gun_ownership_screenshot.png' title='Screenshot of gun ownership' width='' alt='Screenshot of gun ownership' />
 
     So the more negative sentiment a person is towards guns, the higher the gun ownership rate. It is an almost opposite type of result I was expecting.
 
