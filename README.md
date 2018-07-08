@@ -2,7 +2,7 @@
 
 Repository with all the files/scripts I used for Twitter sentiment analysis on gun related tweets. Project was for the MISA 2018 Coding Challenge (Case Competition)
 
-Synopsis:
+Overview:
 Goal was to investigate interesting causes of gun violence in America. I decided to analyze the sentiment towards guns across U.S. states. To gather data, I turned to the Twitter platform as it is a decent representation of sentiment. Used Scikit-learn and NLTK to process Twitter tweets retrieved using Twitter's API (Tweepy). Was able to identify a slight correlation between gun ownership rate per person and sentiment towards guns.
 
 Technologies used: Python, machine learning, natural language processing, Tableau, Git
