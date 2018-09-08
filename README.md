@@ -107,13 +107,4 @@ Technologies used: Python, machine learning, natural language processing, Tablea
 - The Twitter dataset by Ibrahim Naji that I used is removed as it is too big to upload to GitHub. However, there is a pickled dataset with the tweets I used.
 - Cleaned up code and file directories. Unsure if program will function how it intends to.
 
-## License
-
-Copyright [2018] [Henry Vuong]
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 
