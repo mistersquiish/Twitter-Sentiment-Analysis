@@ -78,8 +78,6 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     So the more negative sentiment a person is towards guns, the higher the gun ownership rate. It is an almost opposite type of result I was expecting.
     
 7) Conclusion
-
-    Overall, I learned a lot during this project. I strengthened my Python scripting and exposed myself to powerful libraries like NLTK and Scikit-learn. In addition, I utilized Twitter's API in a unique way to investigate a controversial problem in the United States.
     
     Some things in the future to improve this data analysis project:
     - [ ] Train with data is more gun related. Couldn't do this as I did not have the time to label 10,000+ Twitter tweets.
@@ -90,8 +88,6 @@ Technologies used: Python, machine learning, natural language processing, Tablea
     - [ ] I only used the BNB and MNB classifiers to classify tweets as I could not figure out how to extract probability from the Linear SVC and Nu SVC classifiers.
     - [ ] I used the keyword 'guns' when streaming the Twitter tweets, however, this does not necessarily mean the subject of the tweet will be guns. The phrase 'gun control' can also be included in the tweets, but it is only a small percentage of the overall gun related tweets.
     - [ ] Twitter text is dirty and short. Perhaps a different approach?
-    
-    Again, this was my first data analysis project, and I am still learning. If you have any suggestions or possible errors I made, I urge you to message me, so I can investigate further.
 
 ## Libraries / Datasets Used
 
